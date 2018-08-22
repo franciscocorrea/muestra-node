@@ -1,0 +1,63 @@
+{
+  "name": "Project",
+  "version": "1.1.0",
+  "description": "LotterApp",
+  "author": "Francisco Correa <anibalfranciscocorrea@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "standard \"src/main/**/*.js\" --fix",
+    "start": "node src/main/start.js",
+    "test:api": "ava src/tests/**/*.test.js",
+    "test:api:coverage": "nyc --reporter=lcov npm run test:api",
+    "docs": "node src/main/docs.js && spectacle -C -J  api.json -t api_docs/",
+    "dev": "nodemon src/main/start.js"
+  },
+  "dependencies": {
+    "apn": "^1.7.6",
+    "aws-sdk": "^2.164.0",
+    "basic-auth": "^1.0.4",
+    "body-parser": "^1.15.1",
+    "dedent": "^0.6.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.15.4",
+    "express-sslify": "^1.2.0",
+    "iconv-lite": "^0.4.13",
+    "lindyhop": "^0.1.7",
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.5.7",
+    "morgan": "^1.7.0",
+    "multer": "^1.1.0",
+    "node-cron": "^1.2.1",
+    "node-redsys-api": "0.0.3",
+    "nodemailer": "^2.6.4",
+    "nodemailer-express-handlebars": "^2.0.0",
+    "nodemailer-ses-transport": "^1.4.0",
+    "pify": "^2.3.0",
+    "pug": "^2.0.0-beta6",
+    "pync": "^1.0.3",
+    "request": "^2.72.0",
+    "s3": "^4.4.0",
+    "scrypt": "^6.0.3",
+    "seaquel": "^0.1.17",
+    "soap": "^0.15.0",
+    "source-map-support": "^0.4.16",
+    "spectacle-docs": "^0.9.11",
+    "twilio": "^2.9.2",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-eslint": "^7.2.3",
+    "dbdiff": "^0.5.1",
+    "nodemon": "^1.11.0",
+    "nyc": "^8.3.0",
+    "standard": "^10.0.3",
+    "supertest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}

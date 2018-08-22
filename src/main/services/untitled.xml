@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:tns="https://aws-qa1.ola.com.ar/wsola/endpoint"><soap:Body><tns:GetPackagesFaresDestinations></tns:GetPackagesFaresDestinations></soap:Body></soap:Envelope>
+
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:tns="https://aws-qa1.ola.com.ar/wsola/endpoint"><soap:Body><tns:GetPackagesFaresDestinations><tram>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:tns=&quot;https://aws-qa1.ola.com.ar/wsola/endpoint&quot; SOAP-ENV:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;tns:GetPackagesFaresDestinations xmlns:tns=&quot;https://aws-qa1.ola.com.ar/wsola/endpoint&quot;&gt;&lt;Request xsi:type=&quot;xsd:string&quot;&gt;&lt;GetPackagesFaresDestinationsRequest&gt;&lt;GeneralParameters&gt;&lt;Username&gt;ftaweb1&lt;/Username&gt;&lt;Password&gt;ft563a&lt;/Password&gt;&lt;/GeneralParameters&gt;&lt;Outlet&gt;1&lt;/Outlet&gt;&lt;PackageType&gt;ALL&lt;/PackageType&gt;&lt;/GetPackagesFaresDestinationsRequest&gt;&lt;/Request&gt;&lt;/tns:GetPackagesFaresDestinations&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;</tram></tns:GetPackagesFaresDestinations></soap:Body></soap:Envelope>
+
+Cabecera Request
+headers: { 
+			'Content-Type': 'text/xml; charset=ISO-8859-1',
+        	'Accept-Encoding': 'gzip,deflate',
+       		 SOAPAction: 'https://aws-qa1.ola.com.ar/wsola/endpoint#GetPackagesFaresDestinations',
+        	'Content-Length': 964,
+             host: 'aws-qa1.ola.com.ar' 
+        }
+
+
+Cabecera response
+{
+ "date":"Mon,09 Apr 2018 19:06:42 GMT",
+ "content-type":"text/xml; charset=UTF-8",
+ "content-length":"560",
+ "connection":"close",
+ "server":"Apache",
+ "x-frame-options":"SAMEORIGIN, sameorigin",
+ "x-soap-server":"OLA Webservice/1.0 (3)",
+ "content-encoding":"gzip",
+ "x-content-type-options":"nosniff",
+ "x-xss-protection":"1; mode=block",
+ "cache-control":"max-age=0, no-cache, no-store, must-revalidate",
+ "pragma":"no-cache",
+ "expires":"Wed, 11 Jan 1984 05:00:00 GMT"
+ }
+
+ <?xml version="1.0" encoding="ISO-8859-1"?>
+ <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="https://aws-qa1.ola.com.ar/wsola/endpoint" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+ 	<SOAP-ENV:Body>
+ 		<tns:GetPackagesFaresDestinations xmlns:tns="https://aws-qa1.ola.com.ar/wsola/endpoint"> 
+ 		<Request xsi:type="xsd:string"><![CDATA[
+ 			<GetPackagesFaresDestinationsRequest>
+ 				<GeneralParameters>
+ 					<Username>ftaweb1</Username>
+ 					<Password>ft563a</Password>
+ 				</GeneralParameters>
+ 				<Outlet>1</Outlet>
+ 				<PackageType>ALL</PackageType>
+ 			</GetPackagesFaresDestinationsRequest>]]>	
+ 			</Request>
+ 		</tns:GetPackagesFaresDestinations>
+ 	</SOAP-ENV:Body>
+ </SOAP-ENV:Envelope>
